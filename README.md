@@ -1,17 +1,8 @@
-## W3stWorldTelegramBot
+## W3stWorldAgentSupport
 
-*Provide Telegram chat capabilities for AI Agent*
 
-## To run locally / develop:
-
-1. copy `.env.example` to `.env` and fill the required fields (get bot token from botfather, and dify api from your dify workflow)
-2. create a virtual environment `python3 -m venv venv`
-3. activate the virtual environment `source venv/bin/activate`
-4. install the dependencies `pip install -r requirements.txt`
-5. run the server `python -m src.bot`
-6. go to telegram and start the bot
-
-## To run with docker
-1. copy `.env.example` to `.env` and fill the required fields (get bot token from botfather, and dify api from your dify workflow)
-2. run with docker compose `docker compose up -d`
-3. shutdown program with `docker compose down`
+| name                 | description                                                   | input args                                   |
+|----------------------|---------------------------------------------------------------|----------------------------------------------|
+| current_running_game | Provides the ability to query the currently running game data | program_address_str</br>rpc_url</br>ipfs_url |
+| today_fortune        | Provides the ability to query the current horoscope           | appid</br>app_security</br>star</br>date     |
+| total_swt_pda        | Provide query of all points account information               | program_address_str</br>rpc_url              |
